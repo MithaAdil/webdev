@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    
+}
+html {
+    background-color: lightblue;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    margin-top: 10px;
+    font-size: 0.8em;
+    text-align: justify;
+    letter-spacing: 2px;
+}
+
+header {
+    margin-top: -50px;
+    width: 80%;
+    display: grid;
+    grid-template-areas: 
+    "profil profil"
+    "intro intro"
+    "story skill"
+    "education contact"; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;  
+    gap: 50px 30px; 
+    padding: 50px;
+    box-sizing: border-box;
+}
+.profile-img {
+    margin-top: 90px;
+    background-image: url(img/madre1.JPG) ;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    grid-area: profil;
+    justify-self: center;
+    border: 2px solid white;
+    box-shadow: 0 0 10px black;
+}
+
+.panel-intro {
+    margin-top: -20px;
+    margin-bottom: 20px;
+    color: black;
+    grid-area: intro;
+    justify-self: center;
+    font-size: 2.5em;
+
+}
+.Story {
+    grid-area: story;
+    
+}
+.Skill {
+    grid-area: skill;
+}
+.Story ,.Contact {
+    box-shadow: 0 0 10px black;
+    padding: 20px;
+    background-color: #a7bed4;
+    border-radius: 5px;
+}
+.Skill ,.Education {
+    box-shadow: 0 0 10px black;
+    padding: 20px;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+}
+.Education {
+    grid-area: education;
+}
+.Contact {
+    grid-area: contact;
+}
